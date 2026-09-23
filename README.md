@@ -173,6 +173,7 @@ font-size: 0.85em;
 white-space: pre;
 color: #a5d6ff;
 }
+.comment { color: #8b949e; }
 </style>
 
 </head>
@@ -248,18 +249,18 @@ color: #a5d6ff;
   <hr>
 
   <h2>🧠 Arquitetura</h2>
-  <pre><code>main.py               <span style="color:#8b949e"># CLI: entrada, persistência do relatório, exit codes</span>
+  <pre><code>main.py               <span class="comment"># CLI: entrada, persistência do relatório, exit codes</span>
 src/
-├─ config.py          <span style="color:#8b949e"># chaves, modelos, orçamento, limites de busca</span>
-├─ prompts.py         <span style="color:#8b949e"># FASES, templates, contrato de avaliação, system blocks</span>
-├─ llm.py             <span style="color:#8b949e"># client, usage/custo, research() com require_web</span>
-├─ fontes.py          <span style="color:#8b949e"># Fonte: URL + data + janela de recência</span>
-├─ evidencias.py      <span style="color:#8b949e"># scoring de confiança, URLs sem data, auditoria</span>
-├─ funil.py           <span style="color:#8b949e"># parse de TAM/SAM/SOM e break-even</span>
-├─ mercado.py         <span style="color:#8b949e"># cenários, amplitude, veredicto de ponto de equilíbrio</span>
-├─ rubrica.py         <span style="color:#8b949e"># notas por critério, eliminatórios, faixas de veredicto</span>
-├─ pendencias.py      <span style="color:#8b949e"># registro de lacunas, níveis, penalidade no score</span>
-└─ pipeline.py        <span style="color:#8b949e"># orquestração, triagem, budget guard, degradação</span></code></pre>
+├─ config.py          <span class="comment"># chaves, modelos, orçamento, limites de busca</span>
+├─ prompts.py         <span class="comment"># FASES, templates, contrato de avaliação, system blocks</span>
+├─ llm.py             <span class="comment"># client, usage/custo, research() com require_web</span>
+├─ fontes.py          <span class="comment"># Fonte: URL + data + janela de recência</span>
+├─ evidencias.py      <span class="comment"># scoring de confiança, URLs sem data, auditoria</span>
+├─ funil.py           <span class="comment"># parse de TAM/SAM/SOM e break-even</span>
+├─ mercado.py         <span class="comment"># cenários, amplitude, veredicto de ponto de equilíbrio</span>
+├─ rubrica.py         <span class="comment"># notas por critério, eliminatórios, faixas de veredicto</span>
+├─ pendencias.py      <span class="comment"># registro de lacunas, níveis, penalidade no score</span>
+└─ pipeline.py        <span class="comment"># orquestração, triagem, budget guard, degradação</span></code></pre>
 
   <h3>Decisões de engenharia</h3>
   <ul>
